@@ -11,3 +11,8 @@ Zemond Infra repository
 2. Сквозное подключение через ключи ssh
 
 ssh -t -i ~/.ssh/pankratov -A pankratov@35.228.129.127 ssh 10.166.0.3
+
+3. Configuration
+
+bastion_IP = 35.228.129.127 
+someinternalhost_IP = 10.166.0.3
