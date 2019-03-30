@@ -1,12 +1,13 @@
 # Zemond_infra
 Zemond Infra repository
 
-1. Для подключения по доменному имени добавим в файл /etc/hosts строку:
+1. Для подключения по доменному имени добавим в файл ssh./hosts строку:
 
-10.166.0.3 someinternalhost
-
-Теперь можно вводить ssh someinternalhost и подключаться по имени сервера.
-В моем понимании нет нужды в .ssh/config так как имя и порт у нас един для двух серверов.
+Host someinternalhost
+        HostName 10.166.0.3
+        User pankratov
+        IdentitiesOnly yes
+        IdentityFile ~/.ssh/pankratov
 
 2. Сквозное подключение через ключи ssh
 
@@ -16,3 +17,7 @@ ssh -t -i ~/.ssh/pankratov -A pankratov@35.228.129.127 ssh 10.166.0.3
 
 bastion_IP = 35.228.129.127 
 someinternalhost_IP = 10.166.0.3
+
+4* Добавляем сертификат и задействуем sslip.io. 
+
+https://35.228.129.127.sslip.io
