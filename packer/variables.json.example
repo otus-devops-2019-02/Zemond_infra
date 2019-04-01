@@ -1,7 +1,7 @@
 {
     "project_id":"infra-666666",
     "machine_type": "f1-micro",
-    "source_image": "reddit-base-666",
+    "source_image_family": "ubuntu-1604-lts",
     "ssh_username": "MegaUser"
     "image_description": "ISO for puma server",
     "disk_size": "10",
