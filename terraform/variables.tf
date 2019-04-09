@@ -25,3 +25,16 @@ variable zone {
 variable private_key_path {
   description = "Path to the private key used for ssh access"
 }
+
+variable public_key_path_appuser1 {
+	description = "Path to the public key used for appuser1 ssh access"
+}
+
+variable public_key_path_appuser2 {
+        description = "Path to the public key used for appuser2 ssh access"
+}
+
+variable public_key_path_appuser3 {
+        description = "Path to the public key used for appuser3 ssh access"
+}
+
