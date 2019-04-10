@@ -20,6 +20,7 @@ variable disk_image {
 
 variable zone {
   description = "Zone of instanse"
+  default     = "europe-west1-d"
 }
 
 variable private_key_path {
@@ -27,14 +28,17 @@ variable private_key_path {
 }
 
 variable public_key_path_appuser1 {
-	description = "Path to the public key used for appuser1 ssh access"
+  description = "Path to the public key used for appuser1 ssh access"
 }
 
 variable public_key_path_appuser2 {
-        description = "Path to the public key used for appuser2 ssh access"
+  description = "Path to the public key used for appuser2 ssh access"
 }
 
 variable public_key_path_appuser3 {
-        description = "Path to the public key used for appuser3 ssh access"
+  description = "Path to the public key used for appuser3 ssh access"
 }
 
+variable count {
+  description = "Number mashine"
+}
