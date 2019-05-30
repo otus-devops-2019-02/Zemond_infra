@@ -11,3 +11,8 @@ variable app_disk_image {
 
   default = "reddit-app-base"
 }
+
+variable "app_firewall_source_ip" {
+  description = "Allow source ip address"
+  default     = ["0.0.0.0/0"]
+}
